@@ -1,0 +1,78 @@
+# DuckDuckGo Allowlist for Pi-hole
+# Overrides blocklists for all major DDG domains and related services
+# Add this as a Subscribed Allowlist in Pi-hole v6+ (or Adlists as allow)
+# Last updated: 2026-11-08
+# Source: Aggregated from public domain lists, CT logs, and known DDG properties
+
+# Core domains (these cover most traffic; add regex for full subdomain coverage if needed)
+duckduckgo.com
+duck.com
+ddg.gg
+duck.ai
+duck.co
+ddg.co
+
+# Country / regional domains
+duckduckgo.ca
+duckduckgo.co.uk
+duckduckgo.de
+duckduckgo.in
+duckduckgo.jp
+duckduckgo.nl
+duckduckgo.org
+duckduckgo.pl
+duckduckgo.uk
+duckduckgo.mx
+duckduckgo.com.mx
+duckduckgo.com.tw
+duckduckgo.sg
+duckduckgo.ke
+duckduckgo.dk
+
+# Other owned / related domains
+duckgo.com
+duckduckhack.com
+duckside.com
+ducksear.ch
+dukgo.com
+justduckit.com
+spreadprivacy.com
+privacysimplified.com
+privatebrowsingmyths.com
+fixtracking.com
+donttrack.us
+dontbubble.us
+goduckgo.com
+hacksear.ch
+cispaletter.com
+cispaletter.org
+cometotheduckside.com
+enteentegeh.de
+duckduckco.com
+duckduckco.de
+
+# DNS / infrastructure
+quack-dns.com
+
+# Common subdomains that sometimes get flagged (exact for safety)
+api.duckduckgo.com
+safe.duckduckgo.com
+start.duckduckgo.com
+www.duckduckgo.com
+staticcdn.duckduckgo.com
+icons.duckduckgo.com
+external-content.duckduckgo.com
+images.duckduckgo.com
+news.duckduckgo.com
+chat.duckduckgo.com
+ai.duckduckgo.com
+login.duckduckgo.com
+support.duckduckgo.com
+blog.duckduckgo.com
+help.duckduckgo.com
+
+# Note: For full subdomain coverage on the main domains, also add these as Regex Allowlist entries:
+# (\.|^)duckduckgo\.com$
+# (\.|^)duck\.com$
+# (\.|^)ddg\.gg$
+# (\.|^)duck\.ai$
